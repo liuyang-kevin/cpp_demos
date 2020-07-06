@@ -1,0 +1,1 @@
+[C Implementation of Wavelet Transform (DWT,SWT and MODWT)](https://github.com/rafat/wavelib)
