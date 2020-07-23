@@ -1,4 +1,16 @@
-https://www.ibm.com/developerworks/cn/linux/thread/posix_thread1/index.html
+# POSIX是标准，与程序本身无关
+可移植操作系统接口（英语：Portable Operating System Interface，缩写为POSIX）是IEEE为要在各种UNIX操作系统上运行软件，而定义API的一系列互相关联的标准的总称，其正式称呼为IEEE Std 1003，而国际标准名称为ISO/IEC 9945。此标准源于一个大约开始于1985年的项目。POSIX这个名称是由理查德·斯托曼（RMS）应IEEE的要求而提议的一个易于记忆的名称。它基本上是Portable Operating System Interface（可移植操作系统接口）的缩写，而X则表明其对Unix API的传承。
+
+----
+# POSIX线程是线程，跟POSIX进程不是一个东西
+POSIX线程（英语：POSIX Threads，常被缩写为Pthreads）是POSIX的线程标准，定义了创建和操纵线程的一套API。
+
+> 不同的系统，实现POSIX的方式也不同
+
+[Linux 线程实现机制分析](https://www.ibm.com/developerworks/cn/linux/kernel/l-thread/index.html)
+
+----
+[pthread](https://www.ibm.com/developerworks/cn/linux/thread/posix_thread1/index.html)
 
 ```c
 #include <pthread.h>
@@ -84,3 +96,5 @@ int main(void) {
 按照同步的思想程序结束时 myglobal 值应当等于 40。但是 myglobal 输出结果为 21，
 
 这是因为每个线程内部执行时是并发的，局部变量j拿到的是20.并没有改变全局myglobal
+
+-----
