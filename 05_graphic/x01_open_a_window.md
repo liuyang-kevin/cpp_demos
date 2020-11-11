@@ -23,6 +23,8 @@ brew install glfw3
 ```
 ## glew
 OpenGL扩展库是个简单的工具，用于帮助C/C++开发者初始化扩展（OpenGL扩展功能）并书写可移植的应用程序。GLEW当前支持各种各样的操作系统，包含Windows，Linux，Darwin，Irix与Solaris。
+### win glew 下载 
+http://glew.sourceforge.net/
 
 # 手动编译，懒得用CMake
 ```shell
